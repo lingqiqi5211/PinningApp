@@ -176,7 +176,7 @@ public class ScLockApp extends Hook {
         try {
             return Settings.Global.getInt(context.getContentResolver(), "key_lock_app");
         } catch (Settings.SettingNotFoundException e) {
-            logE("LockApp", "getInt hyceiler_lock_app will set E: " + e);
+            logE("LockApp", "getLockApp will set E: " + e);
         }
         return -1;
     }

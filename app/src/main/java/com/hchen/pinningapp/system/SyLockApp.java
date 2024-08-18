@@ -133,7 +133,7 @@ public class SyLockApp extends Hook {
         try {
             return Settings.Global.getInt(context.getContentResolver(), "key_lock_app");
         } catch (Settings.SettingNotFoundException e) {
-            logE(tag, "getInt hyceiler_lock_app E: " + e);
+            logE(tag, "getLockApp E: " + e);
         }
         return -1;
     }

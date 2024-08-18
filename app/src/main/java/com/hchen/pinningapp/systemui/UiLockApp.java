@@ -240,7 +240,7 @@ public class UiLockApp extends Hook {
         try {
             return Settings.Global.getInt(context.getContentResolver(), "key_lock_app");
         } catch (Settings.SettingNotFoundException e) {
-            logE("LockApp", "getInt hyceiler_lock_app e: " + e);
+            logE("LockApp", "getLockApp e: " + e);
             setLockApp(context, -1);
         }
         return -1;
